@@ -14,7 +14,7 @@ app.post("/", function(req, res)
 {
     var query=req.body.cityName;
     var unit='metric';
-    var apiKey= "Your API key";
+    var apiKey= "API_key";
     var url = "https://api.openweathermap.org/data/2.5/weather?q="+query+"&appid="+apiKey+"&units="+unit;
     https.get(url, function(response)
     {
